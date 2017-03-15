@@ -16,8 +16,8 @@
 		E35F34E21E3AC880000CB940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35F34E01E3AC880000CB940 /* LaunchScreen.storyboard */; };
 		E35FCBAF1E7637A00078BD24 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E35FCBAE1E7637A00078BD24 /* Settings.bundle */; };
 		E3854AC41E7749BD00A14AF9 /* ExtensionUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3854AC31E7749BD00A14AF9 /* ExtensionUIApp.swift */; };
-		E3885EE91E78C20B00EF309D /* BMICalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3885EE71E78C20500EF309D /* BMICalculator.framework */; };
-		E3885EEA1E78C20B00EF309D /* BMICalculator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3885EE71E78C20500EF309D /* BMICalculator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3AC2A901E79E38A00464BBB /* BMICalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AC2A8E1E79E35D00464BBB /* BMICalculator.framework */; };
+		E3AC2A911E79E38A00464BBB /* BMICalculator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3AC2A8E1E79E35D00464BBB /* BMICalculator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E3885EEA1E78C20B00EF309D /* BMICalculator.framework in Embed Frameworks */,
+				E3AC2A911E79E38A00464BBB /* BMICalculator.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,7 +46,7 @@
 		E35F34E31E3AC880000CB940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E35FCBAE1E7637A00078BD24 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		E3854AC31E7749BD00A14AF9 /* ExtensionUIApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIApp.swift; sourceTree = "<group>"; };
-		E3885EE71E78C20500EF309D /* BMICalculator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BMICalculator.framework; sourceTree = "<group>"; };
+		E3AC2A8E1E79E35D00464BBB /* BMICalculator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BMICalculator.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3885EE91E78C20B00EF309D /* BMICalculator.framework in Frameworks */,
+				E3AC2A901E79E38A00464BBB /* BMICalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 		E3885EE11E78B98500EF309D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E3885EE71E78C20500EF309D /* BMICalculator.framework */,
+				E3AC2A8E1E79E35D00464BBB /* BMICalculator.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

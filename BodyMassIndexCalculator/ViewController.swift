@@ -34,6 +34,7 @@ class ViewController: UIViewController {
 	let bmiUnitTextMetric = "kg/m2"
 	let bmiUnitTextImperial = "lbs/in"
 	let metricPreferenceKey = "metric_preference"
+	let defaultImperialString = "imperial"
 	
 	// Types available in BMICalculator module
 	var bmiCalculator: BMICalculator!
@@ -49,17 +50,17 @@ class ViewController: UIViewController {
 		
 		// Configure text fields
 		weightTextField.delegate = self
-		weightTextField.placeholder = weightKGPlaceholderText
 		heightTextField.delegate = self
-		heightTextField.placeholder = heightCMPlaceholderText
 		
 		// Safety: clear any BMI text
 		BMILabel.text = ""
 		resultsInfoLabel.text = ""
 		
-		// Get user preference for metric system
-		preference = getUserSystemPreference()
-		setHelpText(system: preference)
+		// Register app settings default
+		var appDefaults = [String:String]()
+		appDefaults[metricPreferenceKey] = defaultImperialString
+		UserDefaults.standard.register(defaults: appDefaults)
+		UserDefaults.standard.synchronize()
 		
 		// Add observer for default changes
 		NotificationCenter.default.addObserver(self, selector: #selector(defaultsChanged(notification:)), name: UserDefaults.didChangeNotification, object: nil)
@@ -70,6 +71,10 @@ class ViewController: UIViewController {
 		super.viewWillAppear(animated)
 		// Hide helpView
 		self.hideHelpTapped(hideHelpViewButton)
+		
+		// Get user preference for metric system
+		preference = getUserSystemPreference()
+		setUIElements(to: preference, completion: { _ in })
 	}
 	
 	// MARK: Helper functions
@@ -77,18 +82,18 @@ class ViewController: UIViewController {
 	func defaultsChanged(notification: Notification){
 		// Update UI and results if system preference changes
 		preference = getUserSystemPreference()
-		switchMetricSystem(to: preference) { (finished) in
+		setUIElements(to: preference) { (finished) in
 			if finished {
-				if let (weight, height) = getUserInputsForBMI() {
-					showBMI(weight: weight, height: height, system: preference)
+				if let (weight, height) = self.getUserInputsForBMI() {
+					self.showBMI(weight: weight, height: height, system: self.preference)
 				} else {
-					BMILabel.text = ""
+					self.BMILabel.text = ""
 				}
 			}
 		}
 	}
 	
-	func switchMetricSystem(to system: SystemPreference, completion: ((_: Bool) -> Void)) {
+	func setUIElements(to system: SystemPreference, completion: ((_: Bool) -> Void)) {
 		// Switch any UI elements related to metric system
 		switch system {
 		case .Metric:

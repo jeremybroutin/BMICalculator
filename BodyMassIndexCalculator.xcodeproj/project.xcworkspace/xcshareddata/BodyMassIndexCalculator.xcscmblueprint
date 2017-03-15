@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9A1C0999547CB783B79B999F1FB72788A510E9D9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9A1C0999547CB783B79B999F1FB72788A510E9D9" : 9223372036854775807,
+    "8FB27DC6686D128D98CDA96CFF8532A170CFB336" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5252843B-124A-455F-A890-AB783257A32B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9A1C0999547CB783B79B999F1FB72788A510E9D9" : "BodyMassIndexCalculator\/",
+    "8FB27DC6686D128D98CDA96CFF8532A170CFB336" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BodyMassIndexCalculator",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BodyMassIndexCalculator.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/uwpce-iphone120b-winter-17.git.beanstalkapp.com\/jbroutin.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8FB27DC6686D128D98CDA96CFF8532A170CFB336"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jeremybroutin\/BMICalculator.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9A1C0999547CB783B79B999F1FB72788A510E9D9"
+    }
+  ]
+}
