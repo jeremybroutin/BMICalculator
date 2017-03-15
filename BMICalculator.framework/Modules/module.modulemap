@@ -1,0 +1,10 @@
+framework module BMICalculator {
+  umbrella header "BMICalculator.h"
+
+  export *
+  module * { export * }
+}
+
+module BMICalculator.Swift {
+    header "BMICalculator-Swift.h"
+}
