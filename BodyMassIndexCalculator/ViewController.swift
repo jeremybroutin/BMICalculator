@@ -171,7 +171,7 @@ class ViewController: UIViewController {
 	}
 	
 	func setHelpText(system: SystemPreference) {
-		helpLabel.text = "Current using \(system.rawValue) system.\nCheck app settings to modify."
+		helpLabel.text = "Currently using \(system.rawValue) system.\nCheck app settings to modify."
 	}
 }
 
