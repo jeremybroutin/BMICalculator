@@ -69,6 +69,12 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid inputs, please correct." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTY-oq-lOv">
+                                        <rect key="frame" x="50" y="329" width="275" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        <color key="textColor" red="1" green="0.16426196758380518" blue="0.1192587443924219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.066666666669999999" green="0.50980392159999999" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -77,10 +83,13 @@
                                     <constraint firstItem="Y1I-ih-cdD" firstAttribute="leading" secondItem="Njg-M2-Yx3" secondAttribute="leading" id="AZk-KF-p1C"/>
                                     <constraint firstItem="zBU-Tp-x8M" firstAttribute="leading" secondItem="Njg-M2-Yx3" secondAttribute="leading" id="TDh-r1-0AU"/>
                                     <constraint firstItem="Wpt-7f-avw" firstAttribute="centerY" secondItem="Y1I-ih-cdD" secondAttribute="centerY" id="U8f-Da-C4j"/>
+                                    <constraint firstItem="lTY-oq-lOv" firstAttribute="leading" secondItem="7qz-lt-z4B" secondAttribute="leading" id="UZ2-zu-TWp"/>
                                     <constraint firstItem="zBU-Tp-x8M" firstAttribute="top" secondItem="Njg-M2-Yx3" secondAttribute="bottom" constant="100" id="XdR-cP-OMP"/>
+                                    <constraint firstItem="lTY-oq-lOv" firstAttribute="top" secondItem="7qz-lt-z4B" secondAttribute="bottom" constant="10" id="mDj-ed-tJY"/>
                                     <constraint firstItem="Njg-M2-Yx3" firstAttribute="top" secondItem="NXg-oX-t3S" secondAttribute="top" constant="50" id="ofq-Mp-hbm"/>
                                     <constraint firstAttribute="trailing" secondItem="Njg-M2-Yx3" secondAttribute="trailing" constant="50" id="rST-sJ-M4X"/>
                                     <constraint firstItem="Wpt-7f-avw" firstAttribute="leading" secondItem="Y1I-ih-cdD" secondAttribute="trailing" constant="30" id="tMU-Ne-a5c"/>
+                                    <constraint firstItem="lTY-oq-lOv" firstAttribute="trailing" secondItem="Wpt-7f-avw" secondAttribute="trailing" id="v0a-fN-B7c"/>
                                     <constraint firstItem="Wpt-7f-avw" firstAttribute="trailing" secondItem="Njg-M2-Yx3" secondAttribute="trailing" id="yn8-Cd-deV"/>
                                 </constraints>
                             </view>
@@ -173,6 +182,7 @@
                         <outlet property="BMILabel" destination="Kwv-3K-68n" id="hX3-1E-LNL"/>
                         <outlet property="BMIUnitsLabel" destination="hJZ-09-wWh" id="O5B-wo-up1"/>
                         <outlet property="calculateButton" destination="Wpt-7f-avw" id="NjT-D3-T2m"/>
+                        <outlet property="errorInputsLabel" destination="lTY-oq-lOv" id="fmz-3a-Dm0"/>
                         <outlet property="heightTextField" destination="7qz-lt-z4B" id="P50-ok-ShC"/>
                         <outlet property="helpLabel" destination="kSN-HW-DZF" id="FGN-xv-MQZ"/>
                         <outlet property="helpView" destination="j2X-Ki-hg8" id="BV3-Kv-HDi"/>

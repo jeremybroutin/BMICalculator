@@ -15,6 +15,7 @@ class ViewController: UIViewController {
 	
 	@IBOutlet var weightTextField: UITextField!
 	@IBOutlet var heightTextField: UITextField!
+	@IBOutlet var errorInputsLabel: UILabel!
 	@IBOutlet var calculateButton: UIButton!
 	@IBOutlet var BMILabel: UILabel!
 	@IBOutlet var resultsInfoLabel: UILabel!
@@ -124,9 +125,22 @@ class ViewController: UIViewController {
 		guard let weightStr = weightTextField.text, let weight = Double(weightStr),
 			let heightStr = heightTextField.text, let height = Double(heightStr) else {
 				print("Unable to convert textfields text into Double.")
+				displayInputsError(true)
 				return nil
 		}
+		
+		// Add additional check for zeros
+		if weight == 0 || height == 0 {
+			print("Zero passed in weight or height")
+			displayInputsError(true)
+			return nil
+		}
+		
 		return (weight, height)
+	}
+	
+	func displayInputsError(_ show: Bool) {
+		errorInputsLabel.isHidden = !show
 	}
 	
 	func showBMI<T: NumericType>(weight: T, height: T, system: SystemPreference){
@@ -219,6 +233,9 @@ extension ViewController: UITextFieldDelegate {
 	}
 	
 	func textFieldDidBeginEditing(_ textField: UITextField) {
+		// Hide any error message previously displayed
+		displayInputsError(false)
+		
 		// Reset any BMI labels existing
 		BMILabel.text = ""
 		BMIUnitsLabel.isHidden = true
