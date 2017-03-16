@@ -16,6 +16,14 @@
 		<data>
 		SHKEzaRJgKp9Ip3+PD/Q9McF4rA=
 		</data>
+		<key>Modules/BMICalculator.swiftmodule/i386.swiftdoc</key>
+		<data>
+		aQejB8xiCPiUH8TAd77r8F0vEXE=
+		</data>
+		<key>Modules/BMICalculator.swiftmodule/i386.swiftmodule</key>
+		<data>
+		wj+eyryzg4G1WTD//Qxpyne2ywg=
+		</data>
 		<key>Modules/BMICalculator.swiftmodule/x86_64.swiftdoc</key>
 		<data>
 		MCqDP9dFgRU/DU3LjZ6qeDZwPUM=
@@ -51,6 +59,28 @@
 			<key>hash2</key>
 			<data>
 			GFSUjo6QdZKk59ucKQqhY3OAHuOFSCQCSgDH7VYurKo=
+			</data>
+		</dict>
+		<key>Modules/BMICalculator.swiftmodule/i386.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aQejB8xiCPiUH8TAd77r8F0vEXE=
+			</data>
+			<key>hash2</key>
+			<data>
+			cLvWOY04jbJ5xhi1sCZYrWLEeuoVsSRmRdQba/wh8BY=
+			</data>
+		</dict>
+		<key>Modules/BMICalculator.swiftmodule/i386.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wj+eyryzg4G1WTD//Qxpyne2ywg=
+			</data>
+			<key>hash2</key>
+			<data>
+			jzgVGY5xZWWofAoy4BJMmDFkFcX0rPotfCXDEmFRokY=
 			</data>
 		</dict>
 		<key>Modules/BMICalculator.swiftmodule/x86_64.swiftdoc</key>
